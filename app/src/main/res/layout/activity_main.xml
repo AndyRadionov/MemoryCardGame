@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/field_background"
+    tools:context="com.example.android.memorycardgame.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memento" />
+
+    <GridLayout
+        android:id="@+id/cards_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="@integer/columnCount"
+        android:orientation="horizontal">
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_0_0"
+            style="@style/card"
+            android:onClick="onCardClick" />
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_0_1"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_0_2"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_0_3"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_0_4"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_0_5"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_1_0"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_1_1"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_1_2"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_1_3"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_1_4"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_1_5"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_2_0"
+            style="@style/card"
+            android:onClick="onCardClick" />
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_2_1"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_2_2"
+            style="@style/card"
+            android:onClick="onCardClick" />
+
+        <com.example.android.memorycardgame.CardView
+            android:id="@+id/card_2_3"
+            style="@style/card"
+            android:onClick="onCardClick" />
+        <!--
+                <com.example.android.memorycardgame.CardView
+                    android:id="@+id/card_2_4"
+                    style="@style/card"
+                    android:onClick="onCardClick" />
+
+                <com.example.android.memorycardgame.CardView
+                    android:id="@+id/card_2_5"
+                    style="@style/card"
+                    android:onClick="onCardClick"
+                    android:layout_marginEnd="0dp"/>-->
+
+    </GridLayout>
+
+</LinearLayout>
