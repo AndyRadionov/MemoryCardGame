@@ -10,8 +10,8 @@
 
     <style name="card">
         <item name="android:layout_margin">6dp</item>
-        <item name="android:layout_width">72dp</item> <!--66 88-->
-        <item name="android:layout_height">96dp</item>
+        <item name="android:layout_width">@dimen/card_width</item>
+        <item name="android:layout_height">@dimen/card_height</item>
         <item name="android:background">@drawable/back</item>
 
     </style>
