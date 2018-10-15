@@ -1,5 +1,6 @@
-package io.github.andyradionov.memorycardgame
+package io.github.andyradionov.memorycardgame.game
 
+import io.github.andyradionov.memorycardgame.R
 import java.util.*
 
 /**

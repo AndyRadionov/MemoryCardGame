@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">MemoryCardGame</string>
+    <string name="app_name" translatable="false">MemoryCards</string>
+    <string name="moves_number">Move: %d</string>
+    <string name="lets_play_text">Let\'s play?</string>
+
+    <string name="btn_start_text">Start</string>
+    <string name="reset_button">Reset</string>
+    <string name="btn_scores_text">Scores</string>
+
+    <string name="result_dialog_title">Result</string>
+    <string name="result_message">Congratulations!\n\nMoves made: %d</string>
+
+    <string name="scores_title">Scores table</string>
+    <string name="restart_button">Restart</string>
+    <string name="scores_button">Results</string>
+    <string name="exit">Exit</string>
+
+    <!--SharedPreferences-->
+    <string name="scores_list_key" translatable="false">scores_list</string>
+    <string name="scores_list_default" translatable="false">[]</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="card_width">108dp</dimen>
+    <dimen name="card_height">144dp</dimen>
+    <dimen name="btn_text_size">16dp</dimen>
+</resources>

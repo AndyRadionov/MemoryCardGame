@@ -9,11 +9,10 @@
     </style>
 
     <style name="card">
-        <item name="android:layout_margin">6dp</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
         <item name="android:layout_width">@dimen/card_width</item>
         <item name="android:layout_height">@dimen/card_height</item>
         <item name="android:background">@drawable/back</item>
-
     </style>
 
 </resources>

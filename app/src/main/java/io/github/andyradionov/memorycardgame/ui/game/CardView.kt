@@ -1,9 +1,10 @@
-package io.github.andyradionov.memorycardgame
+package io.github.andyradionov.memorycardgame.ui.game
 
 import android.content.Context
 import android.content.res.TypedArray
 import android.util.AttributeSet
 import android.view.View
+import io.github.andyradionov.memorycardgame.R
 
 /**
  * @author Andrey Radionov

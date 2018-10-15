@@ -4,20 +4,84 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/field_background"
-    tools:context=".GameActivity">
+    android:background="@drawable/screen_background"
+    tools:context=".ui.game.GameActivity">
+
+    <TextView
+        android:id="@+id/tv_info_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/text_background"
+        android:padding="8dp"
+        android:text="@string/lets_play_text"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/scores_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/cards_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/field_background"
+        app:layout_constraintBottom_toBottomOf="@id/cards_container"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cards_container" />
 
     <GridLayout
         android:id="@+id/cards_container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:columnCount="@integer/columnCount"
+        android:columnCount="4"
         android:orientation="horizontal"
         android:padding="@dimen/container_padding"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/vertical_guide"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:onClick="onStartClick"
+        android:padding="16dp"
+        android:text="@string/btn_start_text"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/btn_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/vertical_guide"
+        app:layout_constraintTop_toBottomOf="@id/cards_container" />
+
+    <Button
+        android:id="@+id/btn_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_background"
+        android:onClick="onButtonClick"
+        android:padding="16dp"
+        android:text="@string/btn_scores_text"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="@dimen/btn_text_size"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/vertical_guide"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cards_container" />
 
 </android.support.constraint.ConstraintLayout>

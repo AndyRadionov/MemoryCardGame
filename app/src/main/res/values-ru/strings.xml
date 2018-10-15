@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="moves_number">Ход: %d</string>
+    <string name="lets_play_text">ПОИГРАЕМ?</string>
+
+    <string name="btn_start_text">Старт</string>
+    <string name="reset_button">Сброс</string>
+    <string name="btn_scores_text">Scores</string>
+
+    <string name="result_dialog_title">Результат игры</string>
+    <string name="result_message">Поздравляем!\n\nСделано ходов: %d</string>
+
+    <string name="scores_title">Таблица результатов</string>
+    <string name="restart_button">Рестарт</string>
+    <string name="scores_button">Результаты</string>
+    <string name="exit">Выход</string>
+</resources>
