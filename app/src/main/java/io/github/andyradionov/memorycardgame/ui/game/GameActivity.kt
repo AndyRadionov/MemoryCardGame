@@ -37,7 +37,8 @@ class GameActivity : AppCompatActivity() {
 
     override fun onPause() {
         super.onPause()
-        introHandler.removeCallbacks(null)
+        introHandler.removeCallbacksAndMessages(null)
+        btn_start.isEnabled = true
     }
 
     fun onCardClick(v: View) {
