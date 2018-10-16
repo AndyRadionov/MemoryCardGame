@@ -20,4 +20,12 @@ class GameViewModel : ViewModel() {
         pairsLeft = UNIQUE_CARDS_NUMBER
         pairsRes = CardsDataHelper.generateUniqueCardPairs()
     }
+
+    fun removePair(firstRes: Int?, secondRes: Int?) {
+        pairsLeft--
+        val firstIdx = pairsRes.indexOf(firstRes)
+        val secondIdx = pairsRes.lastIndexOf(secondRes)
+        pairsRes[firstIdx] = -1
+        pairsRes[secondIdx] = -1
+    }
 }

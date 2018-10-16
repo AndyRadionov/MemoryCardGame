@@ -121,7 +121,8 @@ class GameActivity : AppCompatActivity() {
                     firstCardClicked?.visibility = View.INVISIBLE
                     secondCardClicked?.visibility = View.INVISIBLE
 
-                    removePair()
+                    gameViewModel.removePair(firstCardClicked?.resourceId,
+                            secondCardClicked?.resourceId)
                     checkWin()
                 } else {
                     flipCard(firstCardClicked!!, false)
@@ -133,14 +134,6 @@ class GameActivity : AppCompatActivity() {
                 secondCardClicked = null
             }
         })
-    }
-
-    private fun removePair() {
-        gameViewModel.pairsLeft--
-        val firstIdx = gameViewModel.pairsRes.indexOf(firstCardClicked?.resourceId)
-        val secondIdx = gameViewModel.pairsRes.lastIndexOf(secondCardClicked?.resourceId)
-        gameViewModel.pairsRes[firstIdx] = -1
-        gameViewModel.pairsRes[secondIdx] = -1
     }
 
     private fun checkWin() {
