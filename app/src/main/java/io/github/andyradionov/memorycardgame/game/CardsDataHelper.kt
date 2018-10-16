@@ -6,13 +6,13 @@ import java.util.*
 /**
  * @author Andrey Radionov
  */
-private const val ALL_CARDS_NUMBER = 52
-private const val FIELD_CARDS_NUMBER = 16
-private const val UNIQUE_CARDS_NUMBER = 16 / 2
+const val ALL_CARDS_NUMBER = 52
+const val FIELD_CARDS_NUMBER = 16
+const val UNIQUE_CARDS_NUMBER = 16 / 2
 
 object CardsDataHelper {
 
-    fun generateUniqueCardPairs(): List<Int> {
+    fun generateUniqueCardPairs(): MutableList<Int> {
         val random = Random()
         val uniqueCards = HashSet<Int>(UNIQUE_CARDS_NUMBER)
 

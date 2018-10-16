@@ -4,7 +4,7 @@
     <string name="lets_play_text">Let\'s play?</string>
 
     <string name="btn_start_text">Start</string>
-    <string name="reset_button">Reset</string>
+    <string name="btn_reset_text">Reset</string>
     <string name="btn_scores_text">Scores</string>
 
     <string name="result_dialog_title">Result</string>

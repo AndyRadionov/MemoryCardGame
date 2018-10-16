@@ -4,7 +4,7 @@
     <string name="lets_play_text">ПОИГРАЕМ?</string>
 
     <string name="btn_start_text">Старт</string>
-    <string name="reset_button">Сброс</string>
+    <string name="btn_reset_text">Сброс</string>
     <string name="btn_scores_text">Результаты</string>
 
     <string name="result_dialog_title">Результат игры</string>

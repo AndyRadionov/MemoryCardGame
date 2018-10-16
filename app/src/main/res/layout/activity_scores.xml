@@ -40,8 +40,6 @@
         android:layout_marginTop="@dimen/scores_margins"
         android:background="@drawable/field_background"
         android:padding="@dimen/scores_padding"
-        android:dividerHeight="4dp"
-        android:divider="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
