@@ -1,6 +1,7 @@
 package io.github.andyradionov.memorycardgame.ui.game
 
 import android.animation.Animator
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
@@ -8,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import io.github.andyradionov.memorycardgame.R
 import io.github.andyradionov.memorycardgame.game.CardsDataHelper
+import io.github.andyradionov.memorycardgame.ui.scores.ScoresActivity
 import kotlinx.android.synthetic.main.activity_game.*
 import java.util.concurrent.atomic.AtomicInteger
 
@@ -56,8 +58,13 @@ class GameActivity : AppCompatActivity() {
         })
     }
 
-    public fun onStartClick(v: View) {
+    fun onStartClick(v: View) {
         flipAllCards()
+    }
+
+    fun onScoresClick(v: View) {
+        val intent = Intent(this, ScoresActivity::class.java)
+        startActivity(intent)
     }
 
     private fun initCards() {

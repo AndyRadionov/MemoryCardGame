@@ -3,5 +3,7 @@
     <dimen name="card_margin">8dp</dimen>
     <dimen name="card_width">108dp</dimen>
     <dimen name="card_height">144dp</dimen>
-    <dimen name="btn_text_size">16dp</dimen>
+
+    <dimen name="scores_text_size">30dp</dimen>
+    <dimen name="btn_text_size">24dp</dimen>
 </resources>
