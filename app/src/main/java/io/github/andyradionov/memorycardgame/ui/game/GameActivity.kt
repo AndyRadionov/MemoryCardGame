@@ -141,6 +141,7 @@ class GameActivity : AppCompatActivity() {
             showScoreDialog()
             ScoresHelper.updateScoresList(this, gameViewModel.moves)
             gameViewModel.reset()
+            updateScoresView()
         }
     }
 
